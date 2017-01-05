@@ -7,8 +7,79 @@
 {% endblock %}
 
 {% block content %}
+
+<!-- slider -->
+			<header>
+
+
+			<div class="header-content">
+
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators">
+				      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				      <li data-target="#myCarousel" data-slide-to="1"></li>
+				      <li data-target="#myCarousel" data-slide-to="2"></li>
+				    </ol>
+
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	
+					    <div class="item active">
+					    	<div class="parallax image">
+					    		<img class="img-responsive" src="img/slider/group@3x.png" alt="" data-enllax-ratio=".1" data-enllax-type="foreground" style="z-index: 99">
+					    	</div>
+					        <div class="carousel-caption header-content-inner" data-enllax-ratio=".1">
+					        	<h1 class="banner_text"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical"> Descubre tu verdadero potencial </h1>
+					        	<p class="header_text"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">Somos la plataforma en la que encuentras ideas, inspiración y herramientas para ampliar tu mente y tus conexiones.</p>
+					        	<a href="#about" class="btn btn-primary btn-xl page-scroll"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">Nuestros cursos</a>
+					        </div>
+					    </div>
+
+					    <div class="item">
+						    <div class="parallax image">
+					    		<img class="img-responsive" src="img/slider/group@3x.png" alt="" data-enllax-ratio="0" data-enllax-type="foreground" style="z-index: 99">
+					    	</div>
+					        <div class="carousel-caption header-content-inner">
+					        	<h1 class="banner_text"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical"> Descubre tu verdadero potencial </h1>
+					        	<p class="header_text"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">Somos la plataforma en la que encuentras ideas, inspiración y herramientas para ampliar tu mente y tus conexiones.</p>
+					        	<a href="#about" class="btn btn-primary btn-xl page-scroll"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">Nuestros cursos</a>
+					        </div>
+					    </div>
+					    
+					    <div class="item">
+					    	<div class="parallax image">
+					    		<img class="img-responsive" src="img/slider/group@3x.png" alt=""  style="z-index: 99">
+					    	</div>
+					        <div class="carousel-caption header-content-inner" >
+					        	<h1 class="banner_text"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical"> Descubre tu verdadero potencial </h1>
+					        	<p class="header_text"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">Somos la plataforma en la que encuentras ideas, inspiración y herramientas para ampliar tu mente y tus conexiones.</p>
+					        	<a href="#about" class="btn btn-primary btn-xl page-scroll"  data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">Nuestros cursos</a>
+					        </div>
+					    </div>
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				        <span class="glyphicon glyph_left">
+				        	<img class="glyph_l" src="../img/icons/left-arrow-64.png" />
+				        </span>
+				        <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				        <span class="glyphicon glyph_right">
+				        	<img class="glyph_l" src="../img/icons/right-arrow-64.png" />
+				        </span>
+				        <span class="sr-only">Next</span>
+				    </a>
+				</div>
+			</div>
+</header>
+
+
+
 <!-- content-started section 1 -->
-		<section id="about">
+		<section id="about" class="about">
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 text-center">
@@ -20,7 +91,7 @@
 	    </section>
 
 	<!-- section 2 services -->
-	    <section class="bg-primary">
+	    <section class="bg-primary parallax" data-enllax-ratio=".2" data-enllax-type="foreground" style="z-index: 99">
 	        <!-- logo img -->
 	        <div class="container custom_container">
 	            <div class="row">
@@ -31,32 +102,32 @@
 					<!-- section part 1 -->
 	                <div class="col-lg-3 col-md-6 text-center">
 	                    <div class="service-box">
-	                        <img class="sr-icons" src="img/icons/s-t-a-r@3x.png">
-	                        <p class="service_text1 text_s2"> Métodos efectivos para crear nuevas habilidades </p>
+	                        <img class="sr-icons" src="img/icons/s-t-a-r@3x.png" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">
+	                        <p class="service_text1 text_s2" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical"> Métodos efectivos para crear nuevas habilidades </p>
 	                    </div>
 	                </div>
 
 	                <!-- section part 2 -->
 	                <div class="col-lg-3 col-md-6 text-center">
 	                    <div class="service-box">
-	                        <img class="sr-icons" src="img/icons/r-o-c-k-e-t@3x.png">
-	                        <p class="service_text2 text_s2"> Libertad y apertura para desarrollar las cualidades personales y el potencial personal </p>
+	                        <img class="sr-icons" src="img/icons/r-o-c-k-e-t@3x.png" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">
+	                        <p class="service_text2 text_s2" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical"> Libertad y apertura para desarrollar las cualidades personales y el potencial personal </p>
 	                    </div>
 	                </div>
 
 	                <!-- section part 3 -->
 	                <div class="col-lg-3 col-md-6 text-center">
 	                    <div class="service-box">
-	                        <img class="sr-icons" src="img/icons/c-o-m-p-u-t-e-r@3x.png">
-	                        <p class="service_text3 text_s2"> Originalidad y vanguardia para ofrecer información relevante y actualizada </p>
+	                        <img class="sr-icons" src="img/icons/c-o-m-p-u-t-e-r@3x.png" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">
+	                        <p class="service_text3 text_s2" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical"> Originalidad y vanguardia para ofrecer información relevante y actualizada </p>
 	                    </div>
 	                </div>
 
 	                <!-- section part 4 -->
 	                <div class="col-lg-3 col-md-6 text-center">
 	                    <div class="service-box">
-	                        <img class="sr-icons" src="img/icons/d-i-p-l-o-m-a@3x.png">
-	                        <p class="service_text4 text_s2"> Auto-evaluación y mejoras constantes a nuestros métodos y plataforma </p>
+	                        <img class="sr-icons" src="img/icons/d-i-p-l-o-m-a@3x.png" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical">
+	                        <p class="service_text4 text_s2" data-enllax-ratio=".2" data-enllax-type="foreground" data-enllax-direction="vertical"> Auto-evaluación y mejoras constantes a nuestros métodos y plataforma </p>
 	                    </div>
 	                </div>
 	            </div>
@@ -126,22 +197,22 @@
 	            </div>
 	            <div class="row sub_section_detail">
 	                <div class="col-lg-3 col-md-3 sub_section">
-	                	<img class="icon" src="img/icons/r-e-a-d@3x.png">
+	                	<img class="icon social_img" src="img/icons/r-e-a-d@3x.png">
 	                	<p class="text_margin"> 5 minutos de lectura al día </p>
 	                </div>
 	               
 	                <div class="col-lg-3 col-md-3 sub_section">
-	                	<img class="icon icon2" src="img/icons/group-21@3x.png">
+	                	<img class="icon icon2 social_img" src="img/icons/group-21@3x.png">
 	                	<p class="text_margin2"> Los mejores expertos </p>
 	                </div>
 	                
 	                <div class="col-lg-3 col-md-3 sub_section">
-	                	<img class="icon" src="img/icons/c-a-l-e-n-d-a-r@3x.png">
+	                	<img class="icon social_img" src="img/icons/c-a-l-e-n-d-a-r@3x.png">
 	                	<p class="text_margin"> 5 días de curso </p>
 	                </div>
 	                
 	                <div class="col-lg-3 col-md-3 sub_section">
-	                	<img class="icon" src="img/icons/c-l-o-c-k@3x.png">
+	                	<img class="icon icon4 social_img" src="img/icons/c-l-o-c-k@3x.png">
 	                	<p class="text_margin"> 1 curso a la vez </p>
 	           		</div>
 

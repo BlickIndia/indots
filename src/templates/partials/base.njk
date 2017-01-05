@@ -10,6 +10,7 @@
       
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       <link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+
     {% block meta %}{% endblock %}
     {# <link rel="stylesheet" href="js/{{ projectName }}.libs.css"> #}
     <link rel="stylesheet" href="css/main.css">
@@ -30,21 +31,41 @@
     {# <script src="js/{{ projectName }}.libs.js"></script> #}
     {# <script src="js/{{ projectName }}.js"></script> #}
 
-        <style type="text/css">
-          .parallax{
-            background-image: url('images/group@3x.png');
-            background-size: cover;
-          } 
-        </style>
+        <!--  hiding left & right indicators -->
+        <script >
+            var checkitem = function() {
+            var $this;
+            $this = $("#myCarousel");
+            if ($("#myCarousel .carousel-inner .item:first").hasClass("active")) {
+              $this.children(".left").hide();
+              $this.children(".right").show();
+            } else if ($("#myCarousel .carousel-inner .item:last").hasClass("active")) {
+              $this.children(".right").hide();
+              $this.children(".left").show();
+            } else {
+              $this.children(".carousel-control").show();
+            }
+          };
+
+          checkitem();
+
+          $("#myCarousel").on("slid.bs.carousel", "", checkitem);
+        </script>
 
 
-      <!-- Scripts -->
+          <!-- Scripts used for parallax-->
           <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
           
           <!-- Script for smooth scrolling -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
-          
-          <script src="/enllax.js-master/jquery.enllax.min.js"></script>
+          <script src="http://maiadeen.emmarsolutions.in/ranjodh/jquery.enllax.min.js"> </script>
+        <style type="text/css">
+          .carousel-caption{
+            z-index: 9999;
+          }
+        </style>
+
+          <!-- plugin parallax effect activaton -->
           <script>
 
               (function($){
@@ -60,12 +81,15 @@
       //                direction: 'vertical' // 'horizontal'
       //            });
                   
-              })(jQuery);
+                })(jQuery);
 
 
 
           </script>
-  </body>
+          
+
+
+      </body>
 
   
 </html>
