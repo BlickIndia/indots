@@ -3,43 +3,60 @@ header {
 	min-height 100%
 	color $white
 	width 100%
+	
 	.header-content {
-	  position relative
-	  text-align left
-	  width 100%
+		position relative
+		text-align left
+		width 100%
+	  	
 	  	.header-content-inner {
 			width 30%
-			margin-left 610px
+			margin-left 680px
+		}
+		
+		.carousel-inner {
 			
-		}
-		.carousel-inner .carousel-caption p{
-			font-size 22px
-			margin-left auto
-			margin-right auto
-		}
+			.carousel-caption p{
+				font-size 22px
+				margin-left auto
+				margin-right auto
+				margin-bottom 75px
+			}
+		}	
 	}
 }
-
 .carousel-control {
 	width 4% !important
 }
 .carousel-indicators {
-	display none
+	display none 
+}
+.head_text_first{
+	margin-bottom 50px !important
 }
 .carousel-control.left, .carousel-control.right {
    background-image none !important
    filter none !important
 }
 .carousel-caption {
-	 text-align left
-	 text-shadow 0px 0px 0px !important
+	text-align left
+	text-shadow 0px 0px 0px !important
+	position absolute
+	bottom 160px
+	left 15%
 }
-h1.banner_text{
+.carousel-caption.caption_align {
+	position absolute
+	bottom 55px
+	left 15%
+}
+h1.banner_text {
 	color $blue
-}
-.banner_text {
-	
+	font-size 44px
 	font-family 'Avenir LT Std 85 Heavy'
+}
+.first_banner{
+	margin-bottom 10px
 }
 bg-primary.btn-xl {
 	padding 14px 25px !important
@@ -87,10 +104,16 @@ bg-primary.btn-xl {
 .blog_text {
 	margin-bottom 70px
 }
+.blog{
+	padding 50px 0
+}
+.text_caption_thumb{
+	margin-bottom 0px
+	line-height 18px
+}
 section {
 	padding 100px 0
 }
-
 .btn-xl {
 	padding 14px 25px
 	color $white
@@ -100,8 +123,9 @@ section {
 }
 .btn.btn-default.btn-xl-more {
 	font-size 18px
-	padding 0px 24px
-	font-family: 'Avenir LT Std 85 Heavy'
+	padding 0px 28px
+	font-family 'Avenir LT Std 85 Heavy'
+	height 62px
 }
 .bg-primary {
 	/* background-image url(/img/bg-thumb/rectangle-4@3x.png) */
@@ -129,7 +153,7 @@ section {
 .blog_content {
 	h2.blog_title {
 		color $darkgrey
-		margin-bottom: 40px;
+		margin-bottom 40px
 		font-family 'Avenir LT Std 85 Heavy'
 	}
 }
@@ -189,6 +213,8 @@ section {
 }
 .thumb_text {
 	font-size 22px
+	line-height 22px
+	margin 75px 0
 }
 .head_thumb {
 	padding-top 10px
@@ -237,21 +263,21 @@ section {
 	margin-bottom 50px !important
 	height 424px
 	.caption {
-		padding 13px 83px !important
+		padding 18px 83px !important
 	}
-}
-.thumb_text {
-	margin 60px 0px
+	.caption.last{
+		padding 31px 83px !important
+	}
 }
 .btn1.btn-xl-more {
 	padding 12px 55px
 	color #fff
-	font-weight 700
+	font-weight 500
 	background-color $btncolor
 	font-size 18px
 	border 0px none
 	border-radius 4px
-	font-family: 'Avenir LT Std 85 Heavy'
+	font-family 'Avenir LT Std 85 Heavy'
 	a{
 		color #fff
 	}
@@ -263,10 +289,12 @@ section {
 	text-align center
 }
 .form-control {
-	height 50px !important
+	height 62px !important
 	border 0.5px solid $darkwhite !important
 	border-radius 0px !important
 	width 325px !important
+	padding 14px 50px
+	font-size 18px
 }
 .form-inline {
 	text-align center
@@ -274,7 +302,6 @@ section {
 .btn-default {
 	color $white !important
 	background-color $btngreen !important
-	height 50px !important
 	border none
 }
 .form-group {
@@ -299,7 +326,6 @@ section {
 	font-size 12px
 	right 132px
 }
-
 
 @media only screen and (max-width: 768px) {
 	.thumb_s1{
@@ -334,9 +360,6 @@ section {
 	.footer_form {
 		text-align left
 	}
-	.form-control1 {
-		width 100%
-	}
 	.glyphicon{
 	    padding 4px
 	    border-radius 40px
@@ -358,6 +381,9 @@ section {
 	.about {
 		padding-bottom 0px
 	}
+	#myCarousel {
+		margin-top: 58px;
+	}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
@@ -365,11 +391,15 @@ section {
 		padding 0px 77px
 	}
 	.thumb_s1 {
-		padding-left 45px !important
-		padding-right 45px !important
+		padding-left 0px !important
+		padding-right 0px !important
+		width 390px
+		float left
 	}
 	.thumbnail {
-		height 480px
+		height 463px
+		width 380px
+		float left
 	}
 	.sub_caption.cap_1, .sub_caption.cap_2 {
 		position absolute
@@ -394,7 +424,7 @@ section {
 	}
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1024px){
+@media only screen and (min-width: 991px) and (max-width: 1280px){
 	.hm_thumbnail {
 		padding 0px 77px
 	}
@@ -403,7 +433,7 @@ section {
 		padding-right 45px !important
 	}
 	.thumbnail {
-		height: 480px;
+		height 480px
 	}
 	.sub_caption.cap_1, .sub_caption.cap_2 {
 		position absolute
@@ -412,5 +442,171 @@ section {
 	}
 	.sub_caption.cap_2 {
 		bottom 30px
+	}
+}
+/* thumbnail */
+@media only screen and (min-width: 480px) and (max-width: 769px){
+	.user_img {
+		width 23%
+		position relative
+		left 25px
+	}
+	.thumbnail {
+		height 470px
+		margin 0px auto
+		width 410px
+	}
+	.thumb_s1{
+		margin-bottom 20px
+	}
+	.sub_caption.cap_1, .sub_caption.cap_2 {
+		position absolute
+		left 217px
+		width 292px
+	}
+}
+/* slider responsive */
+@media only screen and (max-width: 434px){
+	header {
+		.header-content{
+			.header-content-inner {
+				position absolute 
+				right 0px 
+				width 142px 
+				left auto 
+				max-width 100% 
+				top 102px
+			}
+			.header-content-inner.first {
+				position absolute
+				top 72px !important
+			}
+			.carousel-inner{
+				.carousel-caption{
+					p{
+						font-size 8px 
+						margin-bottom 0px 
+					}
+					.head_text_first{
+						margin-bottom 0px !important
+					}
+				}
+			}
+		}
+	} 
+	h1.banner_text{
+		font-size 10px !important
+		margin-bottom 0px !important
+	}
+	.btn-xl.slider_btn {
+		padding 4px 7px !important
+		font-size 10px !important
+	}
+}
+@media only screen and (min-width: 435px) and (max-width: 769px){
+header {
+		.header-content{
+			.header-content-inner {
+				position absolute
+				right 0px
+				width 220px
+				left auto
+				max-width 100%
+				top 132px
+			}
+			.header-content-inner.first {
+				position absolute
+				top 100px !important
+			}
+			.carousel-inner{
+				.carousel-caption{
+					p{
+						font-size 10px
+						margin-bottom 5px 
+					}
+					.head_text_first{
+						margin-bottom 0px 
+					}
+				}
+			}
+		}
+	} 
+	h1.banner_text{
+		font-size 14px
+	}
+	.btn-xl.slider_btn {
+		padding 7px 10px
+		font-size 12px
+	}
+	.first_banner{
+		margin-bottom 0px
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 990px){
+	header {
+		.header-content{
+			.header-content-inner {
+				position absolute
+				right 0px
+				width 350px
+				left auto
+				max-width 100%
+				top 123px
+			}
+			.header-content-inner.first {
+				position absolute
+				top 76px 
+			}
+			.carousel-inner{
+				.carousel-caption{
+					p{
+						font-size 18px
+						margin-bottom 42px 
+					}
+					
+				}
+			}
+		}
+	} 
+	h1.banner_text{
+		font-size 33px
+	}
+	.btn-xl.slider_btn {
+		padding 10px 16px
+	}
+}
+@media only screen and (min-width: 991px) and (max-width: 1366px){
+	header {
+		.header-content{
+			.header-content-inner {
+				position absolute
+				right 0px
+				width 430px
+				left auto
+				max-width 100%
+				top 178px
+			}
+			.header-content-inner.first {
+				position absolute
+				top 130px 
+			}
+			.carousel-inner{
+				.carousel-caption{
+					p{
+						font-size 18px
+						margin-bottom 42px 
+					}
+					.head_text_first{
+						margin-bottom 10px !important
+					}
+				}
+			}
+		}
+	} 
+	h1.banner_text{
+		font-size 33px
+	}
+	.btn-xl.slider_btn {
+		padding 10px 16px
 	}
 }

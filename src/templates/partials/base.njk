@@ -31,65 +31,46 @@
     {# <script src="js/{{ projectName }}.libs.js"></script> #}
     {# <script src="js/{{ projectName }}.js"></script> #}
 
-        <!--  hiding left & right indicators -->
-        <script >
-            var checkitem = function() {
-            var $this;
-            $this = $("#myCarousel");
-            if ($("#myCarousel .carousel-inner .item:first").hasClass("active")) {
-              $this.children(".left").hide();
-              $this.children(".right").show();
-            } else if ($("#myCarousel .carousel-inner .item:last").hasClass("active")) {
-              $this.children(".right").hide();
-              $this.children(".left").show();
-            } else {
-              $this.children(".carousel-control").show();
-            }
-          };
-
-          checkitem();
-
-          $("#myCarousel").on("slid.bs.carousel", "", checkitem);
-        </script>
-
-
-          <!-- Scripts used for parallax-->
-          <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-          
-          <!-- Script for smooth scrolling -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
-          <script src="http://maiadeen.emmarsolutions.in/ranjodh/jquery.enllax.min.js"> </script>
-        <style type="text/css">
-          .carousel-caption{
-            z-index: 9999;
-          }
-        </style>
-
-          <!-- plugin parallax effect activaton -->
-          <script>
-
-              (function($){
-                  
-                  //Plugin activation
-                  $(window).enllax();
-                  
-      //            $('#some-id').enllax();
-                  
-      //            $('selector').enllax({
-      //                type: 'background', // 'foreground'
-      //                ratio: 0.5,
-      //                direction: 'vertical' // 'horizontal'
-      //            });
-                  
-                })(jQuery);
-
-
-
-          </script>
-          
-
-
-      </body>
-
-  
+    <!--  hiding left & right indicators -->
+    <script >
+      var checkitem = function() {
+      var $this;
+      $this = $("#myCarousel");
+      if ($("#myCarousel .carousel-inner .item:first").hasClass("active")) {
+        $this.children(".left").hide();
+        $this.children(".right").show();
+      } else if ($("#myCarousel .carousel-inner .item:last").hasClass("active")) {
+        $this.children(".right").hide();
+        $this.children(".left").show();
+      } else {
+        $this.children(".carousel-control").show();
+      }
+    };
+    checkitem();
+    $("#myCarousel").on("slid.bs.carousel", "", checkitem);
+  </script>
+  <!-- Scripts used for parallax-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Script for smooth scrolling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+    <script src="http://maiadeen.emmarsolutions.in/ranjodh/jquery.enllax.min.js"> </script>
+    <style type="text/css">
+      .carousel-caption{
+        z-index: 9999;
+      }
+    </style>
+    <!-- plugin parallax effect activaton -->
+    <script>
+      (function($){
+      //Plugin activation
+      $(window).enllax();
+      // $('#some-id').enllax();
+      // $('selector').enllax({
+      // type: 'background', // 'foreground'
+      // ratio: 0.5,
+      // direction: 'vertical' // 'horizontal'
+      // });
+      })(jQuery);
+    </script>
+   </body>
 </html>

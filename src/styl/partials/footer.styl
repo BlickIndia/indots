@@ -2,7 +2,6 @@
 footer{
 	padding 100px 0
 }
-
 .bg-footer{
 	background-color $blue
 }
@@ -18,6 +17,7 @@ footer{
 	float left
 	font-size 18px
 	font-weight $black
+	font-family 'Avenir LT Std 85 Heavy'
 }
 .widget_1{
 	color $white
@@ -29,8 +29,6 @@ footer{
 }
 .right_widget {
 	border-left 1px solid $white
-}
-.right_widget{
 	margin-top 60px
 	font-family 'Avenir LT Std 85 Heavy'
 }
@@ -50,7 +48,7 @@ footer{
 	width 100%
 }
 .form-control1 {
-	height 56px
+	height 60px
 	padding 12px 57px
 	font-size 18px
 	border solid 0.5px $darkwhite
@@ -61,25 +59,35 @@ footer{
 .input_btn {
 	margin-top 20px
 }
+*::-webkit-input-placeholder {
+   color white
+   font-family 'Avenir LT Std 55 Roman's
+}
+
+*:-moz-placeholder { /* Firefox 18- */
+   color white
+   font-family 'Avenir LT Std 55 Roman'
+}
+
+*::-moz-placeholder {  /* Firefox 19+ */
+   color white
+   font-family 'Avenir LT Std 55 Roman'
+}
+
+*:-ms-input-placeholder {  
+   color white
+   font-family 'Avenir LT Std 55 Roman'
+}
 .btn.btn-xl-subs {
 	padding 0px 32px
 	font-size 16px
-}
-.form-control1::-webkit-input-placeholder { 
-  font-family 'Avenir LT Std 55 Roman'
-}
-
-.form-control1:-moz-placeholder { 
-  font-family 'Avenir LT Std 55 Roman'
+	height 50px
 }
 .mail_info{
 	font-size 18px 
 }
 
 @media only screen and (max-width: 768px) {
-	.left_widget {
-		border-right 0px none
-	}
 	.logo_img_footer {
 		width: 180px;
 	}
@@ -108,6 +116,7 @@ footer{
 		text-align center
 		width 100%
 		margin-top 0px
+		border-left 0px none
 	}
 	.input_btn {
 		text-align center
@@ -127,5 +136,11 @@ footer{
 	.widget_2, .widget_3 {
 		float left
 		width 100%
+	}
+	.input_text.text_form {
+		text-align center
+	}
+	.form-control1 {
+		max-width 330px
 	}
 }
