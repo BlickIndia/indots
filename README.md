@@ -1,4 +1,4 @@
-# Sylvie
+# Indots
 ## Content
 1. Prerequirements
 2. Before coding
